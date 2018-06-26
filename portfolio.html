@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>PORTFOLIO</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              Portfolio
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li><a href="./blog.html">Blog</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="./contactme.html">Contact Me</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+                 
+
+            </header>
+            
+            <style>
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 256px;
+    height: 144px;
+    margin: 0 auto;
+}
+
+.r11 {
+    background: url(https://source.unsplash.com/random/1920x1081); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.r12 {
+      background: url(https://source.unsplash.com/random/1920x1082); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r13 {
+      background: url(https://source.unsplash.com/random/1920x1083); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r21 {
+      background: url(https://source.unsplash.com/random/1920x1084); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r22 {
+      background: url(https://source.unsplash.com/random/1920x1085); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r23 {
+      background: url(https://source.unsplash.com/random/1920x1086); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r31 {
+    background: url(https://source.unsplash.com/random/1920x1087); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.r32 {
+      background: url(https://source.unsplash.com/random/1920x1088); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r33 {
+      background: url(https://source.unsplash.com/random/1920x1089); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r41 {
+      background: url(https://source.unsplash.com/random/1920x1090); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r42 {
+      background: url(https://source.unsplash.com/random/1920x1091); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.r43 {
+      background: url(https://source.unsplash.com/random/1920x1092); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.gallery .row{
+      display: flex;
+
+      flex-direction: row-reverse;
+}
+
+.gallery .one{
+      margin-bottom: 1em;
+}
+
+</style>
+<div class="gallery">
+      <div class="row one">
+            <div class="zoom r11"></div>
+            <div class="zoom r12"></div>
+            <div class="zoom r13"></div>
+      </div>
+      <div class="row one">
+            <div class="zoom r21"></div>
+            <div class="zoom r22"></div>
+            <div class="zoom r23"></div>
+      </div>
+      <div class="row one">
+            <div class="zoom r31"></div>
+            <div class="zoom r32"></div>
+            <div class="zoom r33"></div>
+      </div>
+      <div class="row one">
+            <div class="zoom r41"></div>
+            <div class="zoom r42"></div>
+            <div class="zoom r43"></div>
+      </div>
+</div>
+
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
